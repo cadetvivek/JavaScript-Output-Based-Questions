@@ -1,0 +1,324 @@
+
+
+<script>
+    // function fruite(){
+    //     console.log(name);//undefined
+    //     console.log(price);//error cant't access price before initialization
+    //     var name =  "apple";
+    //     let price = 20;
+    // }
+    // fruite();
+</script>
+
+<script>
+    // for(var i=0;i<3;i++){
+    //     setTimeout(() => {
+    //         console.log(i)// 3 3 3
+    //     }, 1);
+    // }
+
+</script>
+
+<script>
+      // for(let i=0;i<3;i++){//let don't have goble scope
+    //     setTimeout(() => {
+    //         console.log(i)// 0,1,2
+    //     }, 1);
+    // }
+
+</script>
+
+<script>
+    
+    // console.warn(+true)//it's become a 1 because we add + before
+    // console.warn(typeof +true) //number     
+</script>
+
+<script>
+    // console.warn(!"anil");//false  anil is tring it's true bur we are using this !
+    // console.warn(typeof("anil"))//string
+</script>
+
+<script>
+    // let data = "size";
+    // const bird = {
+    //     size:"small",
+    // };
+    // console.warn(bird[data])//small
+    // console.warn(bird['size'])//small
+    // console.warn(bird.size)//small
+    // console.warn(bird.data)//undefined
+</script>
+
+<script>
+    // let c = {name:"peter"}
+    // let d;
+    // d=c;
+    // c.name = "anil"
+    // console.log(d.name)//anil
+</script>
+
+<script>
+    // var x;
+    // let x = 10;
+    // console.log(x)// error because we can't declare let and var with sme name
+</script>
+
+<script>
+    //  var x;
+    // var x = 10;
+    // console.log(x)//10
+</script>
+
+<script>
+    // let a = 3;
+    // let b = new Number(3) value is same but not type becuase b is Object
+    // console.log(a==b)//true
+    // console.log(a===b)//false
+</script>
+
+<script>
+//  let name;
+//  nmea = {};
+//  console.log(name)//undefined
+
+</script>
+
+<script>
+    // function fruite(){
+    //     console.log('woof')//woof
+    // }
+    // fruite.name="apple";
+    // fruite()   
+</script>
+
+<script>
+    // function sum(a,b){
+    //     return a+b
+    // }
+    // console.log(sum(1,'2'))//12
+</script>
+
+<script>
+    // let number = 0;
+    // console.log(number++);//0
+    // console.log(++number);//2
+    // console.log(number);//2
+</script>
+
+<script>
+    // function getAge(...args){
+    //     console.log(typeof args)//object
+    // }
+    // getAge(21)
+</script>
+
+<script>
+    // function getAge(){
+    //     'use strict' //strict mod stop hoisting method 
+    //     age = 21;
+    //     console.log(age)// error age is not defined
+    // }
+    // getAge();
+</script>
+
+<script>
+    // const sum = eval('10*10+5');//The eval() method evaluates or executes an argument
+    // console.warn(sum)//105
+</script>
+
+<script>
+    // const obj = {1:'a',2:'b',3:'c'}
+    // console.log(obj.hasOwnProperty('1'))//true
+    // console.warn(obj.hasOwnProperty(1))//true
+</script>
+
+<script>
+// for(let i=0;i<5;i++){
+//     if(i%3==0){
+//         continue
+//     }
+//     console.log(i)  //1,2,4
+// }
+</script>
+
+<script>
+    // const foo = ()=>console.log('first')
+    // const bar = ()=>setTimeout(()=>console.log('second'))
+    // const baz = ()=>console.log('third')
+
+    // bar()
+    // foo()
+    // baz()
+
+    // output
+    // first
+    // third
+    // second
+    
+</script>
+
+<!-- 
+    <div onclick="console.log('first div')">
+        <div onclick="console.log('second div')">
+            <button onclick="console.log('button')">
+                Click!
+                </button>
+        </div>
+        </div>
+    </div> its making bubble form inside to outside
+     -->
+     
+<!-- button
+second div
+first div -->
+
+<script>
+    // const person = {name:'Lydia'};
+    // function sahHi(age){
+    //     return `${this.name} is ${age}`;
+    // }
+    // console.log(sahHi.call(person,21))// Lydia is 21
+    // console.log(sahHi.bind(person,21)())// Lydia is 21
+</script>
+
+<script>
+    // function sahHi(){
+    //     return (()=>0)();
+    // }
+    // console.log(typeof sahHi());//number
+</script>
+
+<script>
+    //  function sahHi(){
+    //     return ()=>0
+    // }
+    // console.log(typeof sahHi());//function
+    // console.log(sahHi()());//0
+    // console.log(typeof sahHi()());//number
+</script>
+
+<script>
+    // console.log(typeof typeof 1)//because 1 is  number or type is string
+</script>
+
+<script>
+    // const numbers = [1,2,3];
+    // numbers[6]=11;
+    // console.log(numbers);//[1,2,3,empty*3,11]
+</script>
+
+<script>
+    // const numbers = [1,2,3];
+    // numbers[9]=numbers
+    // console.log(numbers)// infinity 1 ,2,3
+</script>
+
+<script>
+    // console.log(!!null);//false
+    // console.log(!!"");//false
+    // console.log(!!1)//true
+</script>
+
+<script>
+    // console.log(..."Vivek")//V i v e k
+</script>
+
+<script>
+    // console.log(typeof(5 + 5 + +5))//number because +5 become a 5 it's a number
+</script>
+
+<script>
+    // console.log(typeof [])//Object
+</script>
+
+<script>
+    // console.log([]==[])//false bedause both array from different momory location
+</script>
+
+<script>
+    // let data = [1,2,3].map(num=>{
+    //     if(typeof num === 'number') return;//undefind 2 tims because we are return empty 
+    //     return num*2;
+    // })
+    // console.warn(data)
+</script>
+
+<script>
+    // function getInfo(member){
+    //     member.name='Anil';
+    // }
+    // const person = {name:'Sarah'}
+    // getInfo(person);
+    // console.log(person);//{name: 'Anil'}
+</script>
+
+<script>
+    // (()=>{
+    //     let x = (y=10);
+    // })();
+    // console.log(typeof x)//undefined because let is bock level variabel we console outsite
+</script>
+
+<script>
+    //  (()=>{
+    //     let x = (y=10);
+    // })();
+    // console.log(typeof y)//number
+</script>
+
+<script>
+    // it will be give any error or not
+//  (()=>{
+//         let x = 10;
+//     })();
+   
+//     (()=>{
+//         let x = 10;
+//     })(); //Not a error
+    
+</script>
+
+<script>
+//  (()=>{
+//         let x = y=10;
+//     })();
+   
+//     (()=>{
+//         let x =y= 20;
+//     })(); 
+//     console.log(y)//20 because y is a globaly
+
+</script>
+
+<script>
+    // let x = 100;
+    // (()=>{
+    //     var x = 20;
+    // })();
+    // console.log(x)//100 find your answer
+</script>
+
+<script>
+    // console.warn(!true - true)-1 because !true become (-1+1 -1)=-1
+</script>
+
+<script>
+    // console.log(true + +"10");//11  because true become is 1 
+</script>
+
+<script></script>
+
+<script></script>
+
+<script></script>
+
+<script></script>
+
+<script></script>
+
+<script></script>
+
+<script></script>
+ 
+<script></script>
